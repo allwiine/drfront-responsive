@@ -1,0 +1,4 @@
+// Simple helper function for converting parts to percent.
+@function percent($total, $percent) {
+    @return (($total / $percent) * 100%);
+}

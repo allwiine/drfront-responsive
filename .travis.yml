@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '5'
+- '4'
+
+script: gulp
+
+deploy:
+  provider: npm
+  email: glenn.abra@gmail.com
+  api_key:
+    secure: JCtHFiD0PehmA2Y76DAXfZjd6S2b4XCwE5KoZnJ3eM20HRfnTTsSlwOsa8JcumWmLCHnVUgaEzoTxBdUGO7no5fRZmk0i5BYZtZnlBtEM4dUxhozSrsEXf5LaJZ3nfJLLGLtDOxBNP9fs/3AB2GrmwTrDGWLOWmDLE9kMcJebo+DJn2a2yBv0hrHEfQwbHswFe02kzaR/BRU9y+LBoAs6pEezgLeZ1JsMICtoxnGEVWZgmADXjZZ6PI2RJX/RXxVxvutCepVDAopQ9Ds1GGLE6dFIUTJZByU2x6k+4SWSfxtT9ZaiYT+jq1cZVlNUnd/g6sQ7+zcnldDxmWX5eltU3EvyW+UKCWQEqqqFC9qMS5rGtTFeRSeD0xdv42usOL/juaia/q9uY2pKcFZAphDgDezNs0FZwop78+mjw2GZVKGq1ZaU3IFvegCD4HS6ftGmjxKIHSAYWEluWB+glMauWm2JDTHJ67LXQJSLdlnoPlzSV1li523BCVj4bt2WVjFrVJqWllV4XCtcvQiCHLhGlrTfJu7TnqWGee1VsWD56v7JqVau7elS18YQakLC/PVwUgGZp9xIOa78v2JO3FcL5IGnhj8cknq/yNZqcP46vHXBQw4/iu/TArtniPFzgo45B4V7AdhlW37TCRZ6fJsSscSEZLXATjtOvBYFvjot08=
+  on:
+    tags: true
+    repo: allwiine/drfront-responsive
