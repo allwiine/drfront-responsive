@@ -1,0 +1,17 @@
+@mixin dfr-visibility() {
+    @include medium-screens() {
+        @each $selector in $dfr-hide-on-medium {
+            #{$selector} {
+                display: none !important;
+            }
+        }
+    }
+
+    @include small-screens() {
+        @each $selector in $dfr-hide-on-small {
+            #{$selector} {
+                display: none !important;
+            }
+        }
+    }
+}

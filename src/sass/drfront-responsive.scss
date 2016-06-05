@@ -1,0 +1,26 @@
+/*
+
+ DrFront Responsive
+ Version 0.0.1
+ https://github.com/allwiine/drfront-responsive
+
+ Pure SASS solution for fixing Dr.Fronts none-responsive stylesheets
+
+ by glenn.abra@gmail.com
+
+*/
+
+@import "global";
+
+@import "util/percent";
+@import "util/mediaqueries";
+@import "util/visibility";
+
+@import "components/font-size";
+@import "components/width";
+
+@mixin drfront-responsive() {
+    @include dfr-visibility();
+    @include dfr-width();
+    @include dfr-fontsize();
+}

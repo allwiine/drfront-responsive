@@ -1,0 +1,38 @@
+// Simple loop to override all inline font-sizes with viewport-width (vw) units for smaller screens.
+// This way the ratios intended by the deskers will stay intact, just scale to width.
+// Using this solution it is simple to create a fully responsive frontpage, with no use of UA-sniffing or things alike.
+
+
+@mixin fontsize() {
+    $small-factor: $dfr-small-max-width / 98; // Divide by 98 to have a little slack- as browsers are browsers.
+    $medium-factor: $dfr-medium-max-width / 98;
+
+    @for $i from 1 through 256 {
+        // We need to generate two sets of mediaquery-wrapped font-sizes.
+        // The fact that this results in alot of mediaquery-wrapped code, is not a problem.
+        // As we use a combine-mediaquery plugin in the build-process. And we dont have to loop 1-256 two times.
+
+        // The side-bar shows on medium screens, but not at the smallest, so here the articles has full width.
+        @include small-screens() {
+            #{$dfr-article-wrapper} {
+                span[style*="font-size: #{$i}px;"], h3[style*="font-size: #{$i}px;"] {
+                    font-size: #{($i/$small-factor)}vw !important;
+                    line-height: #{($i/($small-factor - 0.05))}vw !important;
+                }
+            }
+        }
+        // Here the sidebar pops in to view, giving the articles that much less width to enjoy.
+        @include medium-screens() {
+            #{$dfr-article-wrapper} {
+                span[style*="font-size: #{$i}px;"], h3[style*="font-size: #{$i}px;"] {
+                    font-size: #{($i/$medium-factor)}vw !important;
+                    line-height: #{($i/($medium-factor - 0.05))}vw !important;
+                }
+            }
+        }
+    }
+}
+
+@mixin dfr-fontsize() {
+    @include fontsize();
+}

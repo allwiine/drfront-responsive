@@ -1,0 +1,30 @@
+// DrFront Responsive configuration
+
+
+// Spacings
+$dfr-null: 0;
+$dfr-gutter: 10px;
+
+// Colors
+$dfr-colors: (
+    black: #000,
+    dark-gray: #333
+);
+
+// Max widths
+$dfr-small-max-width: 767;
+$dfr-medium-max-width: 989;
+
+// Selectors
+$dfr-main-front: "#front-7";
+$dfr-sub-front: "#front-8";
+$dfr-navigation: ".navigation-placeholder";
+$dfr-image-wrapper: ".df-img-container";
+$dfr-article-wrapper: ".articles";
+$dfr-article-full: ".article-extract-full";
+$dfr-article-half: ".article-extract-half";
+$dfr-article-one-third: ".article-extract-one-third";
+$dfr-article-two-thirds: ".article-extract-two-thirds";
+
+$dfr-hide-on-small: ();
+$dfr-hide-on-medium: ();
