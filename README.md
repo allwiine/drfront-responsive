@@ -15,16 +15,20 @@ The css has no dependencies, but should only be deployed on top of the already g
       
 ## Installation   
 ```
-npm install drfront-responsive --save
+npm install drfront-responsive --save-dev
 ```    
      
 ## Usage    
-Include `node_modules/drfront-responsive/src/sass/` as a path to your sass-build.   
+Include `node_modules/drfront-responsive/src/sass/` as a path to your sass-build. 
+       
 Then you should create your own settings file for the drfront-responsive settings.   
-This can be copied from `node_modules/drfront-responsive/src/sass/settings/_settings.scss`    
+This can be copied from `node_modules/drfront-responsive/src/sass/settings/_settings.scss`.   
+If you dont provide your own settings, drfront-responsive will use the default settings.   
+These can be seen in `node_modules/drfront-responsive/src/sass/_global.scss.    
+
 Then import the settings file you created and the drfrontresponsive.scss file into your main sass file.    
 ```
-@import "<the-name-you-have-the-config-file";
+@import "<the-name-you-have-the-config-file"; 
 @import "drfront-responsive"
 ```
 
@@ -39,6 +43,13 @@ These can be included just like any other stylesheet, after the drfront css.
      
 
 ## Develop    
+Clone or fork the repo from github:    
+https://github.com/allwiine/drfront-responsive#fork-destination-box     
+     
+```
+git clone git@github.com:allwiine/drfront-responsive.git
+```    
+      
 The projects builds by the use of Gulp.   
 To set up the project for further development, simply run:   
     
@@ -56,6 +67,9 @@ Your do this by running:
 ```
 gulp dev
 ```
+     
+All sourcefiles are located in the `src/` folder.   
+The gulpfile and tasks can be found in the `gulp/` folder.    
      
 ## CI   
 This project uses Travis CI  
