@@ -1,17 +1,17 @@
 @mixin small-screens() {
-	@media (max-width: $dfr-small-max-width + "px") {
-		@content;
-	}
+    @media (max-width: $dfr-small-max-width + "px") {
+        @content;
+    }
 }
 
 @mixin medium-screens() {
-	@media (min-width: ($dfr-small-max-width + 1) + "px") and (max-width: $dfr-medium-max-width + "px") {
-		@content;
-	}
+    @media (min-width: ($dfr-small-max-width + 1) + "px") and (max-width: $dfr-medium-max-width + "px") {
+        @content;
+    }
 }
 
 @mixin all-minor-screens() {
-	@media (max-width: $dfr-medium-max-width + "px") {
-		@content;
-	}
+    @media (max-width: $dfr-medium-max-width + "px") {
+        @content;
+    }
 }

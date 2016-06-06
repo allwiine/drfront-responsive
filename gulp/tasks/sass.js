@@ -7,8 +7,8 @@ var clean = require('gulp-clean-css');
 
 var config = require("../config").sass;
 
-gulp.task("sass", function() {
-    return gulp.src(config.src)
+gulp.task("sass", ["sass:lint"], function() {
+    return gulp.src(config.default)
         .pipe(sass())
         .pipe(combineMq({
             beautify: true
@@ -22,4 +22,11 @@ gulp.task("sass", function() {
             debug: true
         }))
         .pipe(gulp.dest(config.dest))
+});
+
+gulp.task("sass:lint", function() {
+    return gulp.src(config.src)
+        .pipe(lint())
+        .pipe(lint.format())
+        .pipe(lint.failOnError())        
 });
