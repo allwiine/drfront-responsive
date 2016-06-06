@@ -1,6 +1,6 @@
 @import "drfront-responsive";
 
-$dfr-hide-on-small: ("nav", "#top");
+$dfr-hide-on-small: ("aside", "#top");
 $dfr-hide-on-medium: ("#top");
 
 @include drfront-responsive();
