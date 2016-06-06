@@ -33,8 +33,12 @@ This can be included just simply as:
 ```
 @include drfront-responsive()
 ```     
-       
-## Build    
+    
+If the default settings are correct for your dr.front setup, then there are two prebuilt css file in `node_modules/dist/css/` , one minified and one not.   
+These can be included just like any other stylesheet, after the drfront css.   
+     
+
+## Develop    
 The projects builds by the use of Gulp.   
 To set up the project for further development, simply run:   
     
