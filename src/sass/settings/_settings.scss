@@ -26,5 +26,10 @@ $dfr-article-half: ".article-extract-half";
 $dfr-article-one-third: ".article-extract-one-third";
 $dfr-article-two-thirds: ".article-extract-two-thirds";
 
-$dfr-hide-on-small: ();
-$dfr-hide-on-medium: ();
+$dfr-hide-on-small: (
+	"#top",
+	"aside"
+);
+$dfr-hide-on-medium: (
+	"#top"
+);
