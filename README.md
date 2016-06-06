@@ -24,7 +24,7 @@ Include `node_modules/drfront-responsive/src/sass/` as a path to your sass-build
 Then you should create your own settings file for the drfront-responsive settings.   
 This can be copied from `node_modules/drfront-responsive/src/sass/settings/_settings.scss`.   
 If you dont provide your own settings, drfront-responsive will use the default settings.   
-These can be seen in `node_modules/drfront-responsive/src/sass/_global.scss.    
+These can be seen in `node_modules/drfront-responsive/src/sass/_global.scss`.    
 
 Then import the settings file you created and the drfrontresponsive.scss file into your main sass file.    
 ```
@@ -38,7 +38,7 @@ This can be included just simply as:
 @include drfront-responsive()
 ```     
     
-If the default settings are correct for your dr.front setup, then there are two prebuilt css file in `node_modules/dist/css/` , one minified and one not.   
+If the default settings are correct for your dr.front setup, then there are two prebuilt css file in `node_modules/drfront-responsive/dist/css/` , one minified and one not.   
 These can be included just like any other stylesheet, after the drfront css.   
      
 
