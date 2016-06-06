@@ -20,8 +20,8 @@ npm install drfront-responsive --save
      
 ## Usage    
 Include `node_modules/drfront-responsive/src/sass/` as a path to your sass-build.   
-Then you shult create your own settings file for the drfront-responsive settings.   
-This can be copied from `node_modules/drfront-responsive/src/sass/settings/_settings.css`    
+Then you should create your own settings file for the drfront-responsive settings.   
+This can be copied from `node_modules/drfront-responsive/src/sass/settings/_settings.scss`    
 Then import the settings file you created and the drfrontresponsive.scss file into your main sass file.    
 ```
 @import "<the-name-you-have-the-config-file";
